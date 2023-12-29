@@ -16,8 +16,12 @@ body {
 }
 
 html {
-  background-image: url('./assets/background.svg');
+  background: rgb(202, 226, 233);
+    background: radial-gradient(circle, rgba(202, 226, 233, 1) 34%, rgba(118, 203, 229, 1) 90%);
   background-size: cover;
 
   overflow-y: auto !important;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
