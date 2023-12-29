@@ -1,0 +1,75 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar {
+  background-color: #363537;
+}
+
+.app-name {
+  color: white;
+  font-size: 1.75rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding: .5rem 1rem;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  min-width: 0;
+  min-height: 0;
+}
+
+.board-bar {
+  background: rgba(128, 128, 128, 0.5);
+  padding: .5rem 1rem;
+}
+
+.board-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.board-wrapper {
+  display: flex;
+  flex-grow: 1;
+  overflow-x: auto;
+
+}
+.board-columns {
+  display: flex;
+  flex-grow: 1;
+
+}
+
+.board-column {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
+  flex-grow: 1;
+  flex-basis: 0;
+
+  border-radius: 4px;
+
+  min-width: 300px;
+  margin: 50px;
+  padding: 25px;
+}
+
+.board-column:not(:first-child){
+  margin-left: 0;
+}
+
+.column-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
